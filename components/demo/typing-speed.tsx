@@ -10,7 +10,7 @@ const PHRASE =
 export function TypingSpeed() {
   const { lang } = useLang()
   const { typing: t } = demoText(lang)
-  const { wpm, accuracy, done, pressStart, start, reset: resetLabel } = t
+  const { wpm, accuracy, done, pressStart, typeHere, start, reset: resetLabel } = t
 
   const [status, setStatus] = useState<"idle" | "typing" | "done">("idle")
   const [typed, setTyped] = useState("")
@@ -86,7 +86,7 @@ export function TypingSpeed() {
         value={typed}
         onChange={(e) => onChange(e.target.value)}
         disabled={status === "idle" || status === "done"}
-        placeholder="Type here…"
+        placeholder={typeHere}
         className="mb-4 h-10 w-full rounded-lg border border-input bg-background px-3 text-sm outline-none placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:opacity-60"
       />
 

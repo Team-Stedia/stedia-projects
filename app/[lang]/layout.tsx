@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
   const { lang } = await params;
   const dict = getDictionary(lang as Locale);
   return {
-    title: "Stedia — Interactive Studio",
+    title: "Stedia — Web Studio",
     description: dict.hero.badge,
   };
 }

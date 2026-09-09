@@ -20,17 +20,14 @@ export const en = {
     ctaWork: "See selected work",
     ctaContact: "Start a project",
     stats: [
-      { value: "12", label: "Working demos on this site" },
-      { value: "4", label: "Full product builds" },
+      { value: "13", label: "Working demos on this site" },
+      { value: "5", label: "Full-page builds" },
       { value: "100%", label: "Clickable, zero mockups" },
     ],
     visualBadge: "Live demo — click to explore",
     visualCaption: "Admin dashboard · one of our concept builds",
   },
   showcase: {
-    eyebrow: "Selected Work",
-    title: "Work we build, live on this page",
-    subtitle: "Every case study ships with a demo you can actually play with — no download, no wait.",
     viewCase: "View case study",
   },
   stack: {
@@ -100,7 +97,7 @@ export const en = {
       "We sit between design and engineering — obsessing over performance, clean architecture and the small interactions that make software feel alive.",
     imageAlt: "Stedia team collaborating around a table",
     stats: [
-      { value: "2+", label: "Live case studies" },
+      { value: "13", label: "Live case studies" },
       { value: "100%", label: "Interactive demos" },
       { value: "Zero", label: "Fluff" },
     ],
@@ -137,7 +134,7 @@ export const en = {
     eyebrow: "Contact",
     title: "Let's build something you can click",
     subtitle:
-      "Tell us about your project and we'll reply within a day. Got a vague idea? Even better — that's our favourite starting point.",
+      "Tell us about your project and we'll reply within one business day. Got a vague idea? Even better — that's our favourite starting point.",
     facebookTitle: "One click, real human",
     facebookBody:
       "No forms, no waiting rooms. Tap below and you're chatting with the people who will actually build your project.",
@@ -185,7 +182,6 @@ export const en = {
     categoryTool: "Tool",
     categoryGame: "Game",
     categoryUi: "UI",
-    shown: "demo",
   },
   demoPage: {
     back: "Back to case study",
@@ -215,18 +211,15 @@ export const th: typeof en = {
     sub: "Stedia คือทีมรุ่นพี่ขนาดเล็ก ออกแบบและสร้างเว็บไซต์กับแดชบอร์ดระดับ production ทุกโปรเจกต์ด้านล่างมี Live Demo — กดใช้งานของจริงก่อน แล้วค่อยตัดสินใจ",
     ctaWork: "ดูผลงานเด่น",
     ctaContact: "เริ่มโปรเจกต์",
-    stats: [
-      { value: "12", label: "Demoใช้งานได้บนเว็บนี้" },
-      { value: "4", label: "งานระดับโปรดักต์เต็มรูปแบบ" },
+stats: [
+      { value: "13", label: "Demo ใช้งานได้บนเว็บนี้" },
+      { value: "5", label: "งานเต็มหน้า" },
       { value: "100%", label: "กดได้จริง ไม่มี mockup" },
     ],
     visualBadge: "Live Demo — กดสำรวจได้",
     visualCaption: "Admin dashboard · หนึ่งใน concept build ของเรา",
   },
   showcase: {
-    eyebrow: "ผลงานคัดสรร",
-    title: "ผลงานที่เราสร้าง อยู่บนหน้านี้แบบเล่นได้จริง",
-    subtitle: "ทุก case study มาพร้อมDemoที่กดเล่นได้ทันที — ไม่ต้องดาวน์โหลด ไม่ต้องรอ",
     viewCase: "ดู case study",
   },
   stack: {
@@ -296,7 +289,7 @@ export const th: typeof en = {
       "เรายืนอยู่ระหว่างดีไซน์กับวิศวกรรม — ให้ความสำคัญกับประสิทธิภาพ โค้ดที่สะอาด และอินเทอร์แอคชันเล็ก ๆ ที่ทำให้ซอฟต์แวร์มีชีวิตชีวา",
     imageAlt: "ทีม Stedia กำลังร่วมมือกันรอบโต๊ะทำงาน",
     stats: [
-      { value: "2+", label: "Case study ที่เล่นได้จริง" },
+      { value: "13", label: "Case study ที่เล่นได้จริง" },
       { value: "100%", label: "Demoแบบอินเทอร์แอคทีฟ" },
       { value: "Zero", label: "เรื่องน้ำท่วมทุ่ง" },
     ],
@@ -332,7 +325,7 @@ export const th: typeof en = {
     eyebrow: "ติดต่อเรา",
     title: "มาสร้างของที่กดได้จริงด้วยกัน",
     subtitle:
-      "เล่าโปรเจกต์ของคุณมา แล้วเราจะตอบกลับภายใน 1 วัน ไอเดียยังมั่ว ๆ เหรอ? ยิ่งดี — นั่นคือจุดเริ่มต้นที่เราถนัดที่สุด",
+      "เล่าโปรเจกต์ของคุณมา แล้วเราจะตอบกลับภายใน 1 วันทำการ ไอเดียยังมั่ว ๆ เหรอ? ยิ่งดี — นั่นคือจุดเริ่มต้นที่เราถนัดที่สุด",
     facebookTitle: "คลิกเดียว เจอคนจริง",
     facebookBody:
       "ไม่มีฟอร์ม ไม่ต้องรอ กดปุ่มด้านล่างแล้วคุยกับคนที่สร้างงานให้คุณโดยตรง",
@@ -379,7 +372,6 @@ export const th: typeof en = {
     categoryTool: "เครื่องมือ",
     categoryGame: "เกม",
     categoryUi: "UI",
-    shown: "Demo",
   },
   demoPage: {
     back: "กลับไป case study",

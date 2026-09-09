@@ -2,6 +2,16 @@ import type { Locale } from "@/lib/i18n/dictionaries"
 
 const text = {
   en: {
+    todo: {
+      tasksLeft: (n: number) => `${n} task${n === 1 ? "" : "s"} left`,
+      clearAll: "Clear all",
+      placeholder: "Write a task…",
+      add: "Add",
+      empty: "No tasks yet — add one above",
+      markDone: "Mark as done",
+      markNotDone: "Mark as not done",
+      deleteTask: "Delete",
+    },
     pomodoro: {
       focus: "Focus",
       shortBreak: "Short break",
@@ -26,6 +36,7 @@ const text = {
       accuracy: "Accuracy",
       done: "Done!",
       pressStart: "Press Start, then type what you see.",
+      typeHere: "Type here…",
       start: "Start",
       reset: "Reset",
     },
@@ -38,6 +49,7 @@ const text = {
     slot: {
       spin: "Spin",
       score: "Score",
+      ready: "Ready",
     },
     colorMixer: {
       title: "RGB Mixer",
@@ -259,6 +271,16 @@ const text = {
     },
   },
   th: {
+    todo: {
+      tasksLeft: (n: number) => `เหลืออีก ${n} งาน`,
+      clearAll: "ล้างทั้งหมด",
+      placeholder: "เขียนงานที่ต้องทำ…",
+      add: "เพิ่ม",
+      empty: "ยังไม่มีงาน — เพิ่มด้านบนได้เลย",
+      markDone: "ทำเครื่องหมายว่าเสร็จ",
+      markNotDone: "ทำเครื่องหมายว่ายังไม่เสร็จ",
+      deleteTask: "ลบ",
+    },
     pomodoro: {
       focus: "โฟกัส",
       shortBreak: "พักสั้น",
@@ -284,6 +306,7 @@ const text = {
       accuracy: "ความแม่นยำ",
       done: "เสร็จแล้ว!",
       pressStart: "กดเริ่ม แล้วพิมพ์ตามที่เห็นครับ",
+      typeHere: "พิมพ์ตรงนี้…",
       start: "เริ่ม",
       reset: "รีเซ็ต",
     },
@@ -296,6 +319,7 @@ const text = {
     slot: {
       spin: "ปั่น",
       score: "คะแนน",
+      ready: "พร้อม",
     },
     colorMixer: {
       title: "มิกเซอร์สี RGB",

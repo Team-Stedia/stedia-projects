@@ -58,7 +58,7 @@ export function SlotMachine() {
         <span
           className={`text-xs font-medium ${spinning ? "text-amber-600 dark:text-amber-400" : "text-emerald-600 dark:text-emerald-400"}`}
         >
-          {spinning ? "…" : "ready"}
+          {spinning ? "…" : t.ready}
         </span>
       </div>
 
