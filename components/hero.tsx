@@ -80,7 +80,7 @@ export function Hero() {
             </div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/images/projects/admin-dashboard.jpg"
+              src="/images/projects/user-dashboard.jpg"
               alt={hero.visualCaption}
               className="aspect-[16/10] w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
             />

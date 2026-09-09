@@ -37,12 +37,20 @@ export default async function DemoSinglePage({ params }: PageProps<"/[lang]/demo
   const project = projects.find((item) => item.slug === slug);
   if (!project) notFound();
   const dict = getDictionary(locale);
+  // full-page demos need room to breathe; mini widgets stay narrow and centered
+  const wide = project.wide === true;
 
   return (
     <div className="relative flex min-h-screen flex-col items-center overflow-hidden bg-secondary/40 px-4 py-12">
       <div className="pointer-events-none absolute -top-32 left-1/2 h-80 w-[36rem] max-w-full -translate-x-1/2 rounded-full bg-gradient-to-br from-primary/20 via-transparent to-[oklch(0.55_0.16_255)]/20 blur-3xl" />
 
-      <div className="relative z-10 flex w-full max-w-sm flex-col items-center gap-6">
+      <div
+        className={
+          wide
+            ? "relative z-10 flex w-full max-w-6xl flex-col items-center gap-6"
+            : "relative z-10 flex w-full max-w-sm flex-col items-center gap-6"
+        }
+      >
         <Button asChild variant="ghost" size="sm" className="-ms-2 self-start text-muted-foreground">
           <Link href={`/${locale}/work/${project.slug}`}>
             <ArrowLeft className="me-1 size-4" />

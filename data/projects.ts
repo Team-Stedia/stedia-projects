@@ -10,6 +10,8 @@ export type Project = {
   demoType: "iframe" | "component"
   demoUrl?: string
   demoComponent?: string
+  /** full-page demos render in a wide container on their /demo page */
+  wide?: boolean
 }
 
 export const demoCategories: DemoCategory[] = ["tool", "game", "ui"]
@@ -20,7 +22,7 @@ export const projects: Project[] = [
     category: "tool",
     tags: {
       en: ["Interactive Demo", "UI", "React"],
-      th: ["เดโม่แบบเล่นได้", "UI", "React"],
+      th: ["เดโมแบบเล่นได้", "UI", "React"],
     },
     thumbnail: "/images/projects/calculator.jpg",
     title: { en: "Mini Calculator", th: "เครื่องคิดเลขจิ๋ว" },
@@ -37,7 +39,7 @@ export const projects: Project[] = [
     category: "tool",
     tags: {
       en: ["Interactive Demo", "State", "React"],
-      th: ["เดโม่แบบเล่นได้", "State", "React"],
+      th: ["เดโมแบบเล่นได้", "State", "React"],
     },
     thumbnail: "/images/projects/todo.jpg",
     title: { en: "Interactive Todo List", th: "รายการสิ่งที่ต้องทำ" },
@@ -60,7 +62,7 @@ export const projects: Project[] = [
     title: { en: "Pomodoro Timer", th: "ตัวจับเวลาพอมโมโดโร่" },
     description: {
       en: "Focus and rest in cycles. Start, pause and reset with a live countdown that respects your session.",
-      th: "ช่วงโฟกัสและพักเป็นรอบ เริ่ม หยุด และรีเซ็ตได้ พร้อมนับถอยหลังสด ๆ ตามเซสชันของเฮีย",
+      th: "ช่วงโฟกัสและพักเป็นรอบ เริ่ม หยุด และรีเซ็ตได้ พร้อมนับถอยหลังสด ๆ ตามเซสชันของคุณ",
     },
     demoType: "component",
     demoComponent: "pomodoro-timer",
@@ -167,6 +169,7 @@ export const projects: Project[] = [
     demoType: "component",
     demoComponent: "page-landing",
     demoUrl: "/demo/page-landing",
+    wide: true,
   },
   {
     slug: "page-shop",
@@ -184,6 +187,7 @@ export const projects: Project[] = [
     demoType: "component",
     demoComponent: "page-shop",
     demoUrl: "/demo/page-shop",
+    wide: true,
   },
   {
     slug: "page-user-dashboard",
@@ -201,6 +205,7 @@ export const projects: Project[] = [
     demoType: "component",
     demoComponent: "page-user-dashboard",
     demoUrl: "/demo/page-user-dashboard",
+    wide: true,
   },
   {
     slug: "page-admin-dashboard",
@@ -218,5 +223,24 @@ export const projects: Project[] = [
     demoType: "component",
     demoComponent: "page-admin-dashboard",
     demoUrl: "/demo/page-admin-dashboard",
+    wide: true,
+  },
+  {
+    slug: "map-explorer",
+    category: "tool",
+    tags: {
+      en: ["Full Page", "Map", "Leaflet"],
+      th: ["เต็มหน้า", "แผนที่", "Leaflet"],
+    },
+    thumbnail: "/images/projects/map.jpg",
+    title: { en: "Map Explorer", th: "แผนที่ค้นหาสาขา" },
+    description: {
+      en: "An interactive branch map built with Leaflet and OpenStreetMap — search locations, switch street and satellite layers, and fly to any marker.",
+      th: "แผนที่สาขาแบบอินเทอร์แอคทีฟด้วย Leaflet และ OpenStreetMap — ค้นหาสถานที่ สลับชั้นถนนกับดาวเทียม และบินไปหา marker ใดก็ได้",
+    },
+    demoType: "component",
+    demoComponent: "map-explorer",
+    demoUrl: "/demo/map-explorer",
+    wide: true,
   },
 ]

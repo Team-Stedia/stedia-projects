@@ -13,6 +13,7 @@ import { LandingPage } from "./pages/landing"
 import { ShopPage } from "./pages/shop"
 import { UserDashboardPage } from "./pages/user-dashboard"
 import { AdminDashboardPage } from "./pages/admin-dashboard"
+import { MapExplorer } from "./map-explorer"
 import { Notice } from "./notice"
 
 export const demoComponents: Record<string, ComponentType> = {
@@ -28,6 +29,7 @@ export const demoComponents: Record<string, ComponentType> = {
   "page-shop": ShopPage,
   "page-user-dashboard": UserDashboardPage,
   "page-admin-dashboard": AdminDashboardPage,
+  "map-explorer": MapExplorer,
 }
 
 export type DemoComponentName = keyof typeof demoComponents
