@@ -143,6 +143,15 @@ export function LandingPage() {
           </button>
         </form>
         <p className="mt-3 text-xs text-muted-foreground">{t.heroNote}</p>
+        <div className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl border border-border shadow-lg">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/sections/landing-hero.jpg"
+            alt={t.heroImageAlt}
+            loading="lazy"
+            className="aspect-[16/9] w-full object-cover"
+          />
+        </div>
         <dl className="mx-auto mt-12 grid max-w-lg grid-cols-3 gap-4 border-t border-border pt-8">
           {t.heroStats.map((stat) => (
             <div key={stat.label}>

@@ -12,30 +12,78 @@ export const en = {
     letsTalk: "Let's Talk",
   },
   hero: {
-    badge: "Team Stedia — Interactive Studio",
-    headlineBefore: "We design & build fast,",
-    headlineAccent: "interactive",
-    headlineAfter: "experiences.",
-    sub: "Stedia is a small team that turns ideas into production-ready web products — with a demo you can actually click before you even talk to us.",
-    ctaWork: "See our work",
-    ctaContact: "Let's Talk",
-    widget: {
-      windowLive: "Live",
-      windowPaused: "Paused",
-      counterTitle: "Real-time interactions",
-      counterCta: "Click me +",
-      counterHint: (n: number): string =>
-        n >= 20 ? "Maxed out — no limits, like us." : "Try it, this page interacts.",
-      feedTitle: "Session feed",
-      feedSub: "Live stream of clicks",
-      footerHint: "Still here? Precisely what our demos feel like.",
-    },
+    badge: "Stedia — Web studio that ships clickable work",
+    headlineBefore: "We build web products",
+    headlineAccent: "you can try",
+    headlineAfter: "before you buy.",
+    sub: "Stedia is a small senior team designing and building production-ready websites and dashboards. Every project below ships with a live demo — click through the real thing, then decide.",
+    ctaWork: "See selected work",
+    ctaContact: "Start a project",
+    stats: [
+      { value: "12", label: "Working demos on this site" },
+      { value: "4", label: "Full product builds" },
+      { value: "100%", label: "Clickable, zero mockups" },
+    ],
+    visualBadge: "Live demo — click to explore",
+    visualCaption: "Admin dashboard · one of our concept builds",
   },
   showcase: {
     eyebrow: "Selected Work",
     title: "Work we build, live on this page",
     subtitle: "Every case study ships with a demo you can actually play with — no download, no wait.",
     viewCase: "View case study",
+  },
+  stack: {
+    label: "A modern stack, production-ready from day one",
+  },
+  selectedWork: {
+    eyebrow: "Selected Work",
+    title: "Real builds, running live",
+    subtitle:
+      "Four concept builds that show how we think — open any of them and click around. The full playground lives under Demos.",
+    viewAll: "See all work & demos",
+  },
+  process: {
+    eyebrow: "How we work",
+    title: "From first call to launch in four steps",
+    subtitle: "No black box. You see working software early and often.",
+    steps: [
+      {
+        title: "Discover",
+        desc: "A short call to map goals, users and scope. You get a fixed quote — not an open meter.",
+      },
+      {
+        title: "Prototype",
+        desc: "A clickable demo of the core flow within days. You react to software, not descriptions.",
+      },
+      {
+        title: "Build",
+        desc: "Weekly drops to a staging link you can click. Feedback lands in the very next drop.",
+      },
+      {
+        title: "Launch & support",
+        desc: "Deploy, analytics and handover docs — then we stick around for fixes and iteration.",
+      },
+    ],
+  },
+  principles: {
+    eyebrow: "Why Stedia",
+    title: "No slideware. Ever.",
+    subtitle: "Three rules behind everything we ship.",
+    items: [
+      {
+        title: "Demo first",
+        desc: "If it can't be clicked, it doesn't count. Every proposal comes with something already running.",
+      },
+      {
+        title: "Senior only",
+        desc: "The people you talk to are the people who build. No handoffs, no juniors learning on your budget.",
+      },
+      {
+        title: "Boring tech, exciting results",
+        desc: "Next.js, NestJS and TypeORM — proven tools, so your product is fast, secure and maintainable.",
+      },
+    ],
   },
   about: {
     eyebrow: "About Stedia",
@@ -45,6 +93,7 @@ export const en = {
     cardTitle: "Product-minded engineers",
     cardBody:
       "We sit between design and engineering — obsessing over performance, clean architecture and the small interactions that make software feel alive.",
+    imageAlt: "Stedia team collaborating around a table",
     stats: [
       { value: "2+", label: "Live case studies" },
       { value: "100%", label: "Interactive demos" },
@@ -59,21 +108,23 @@ export const en = {
     items: [
       {
         title: "Web Development",
-        description: "Fast, accessible Next.js applications built with type-safe, maintainable code.",
+        description:
+          "Marketing sites and web apps your customers can use on day one — fast, accessible and easy to extend.",
       },
       {
         title: "UI Engineering",
-        description: "Design systems, component libraries and motion that make interfaces feel considered.",
+        description:
+          "Design systems and component libraries that keep every screen consistent as your product grows.",
       },
       {
         title: "Interactive Prototypes",
         description:
-          "Clickable, production-grade demos that validate ideas before a single line of backend.",
+          "A clickable slice of your product in days, so stakeholders approve reality — not slideware.",
       },
       {
         title: "Product Launch",
         description:
-          "From repo setup to CI/CD, monitoring and analytics — we take it across the finish line.",
+          "From repo setup to CI/CD, monitoring and analytics — handed over with docs, not mysteries.",
       },
     ],
   },
@@ -89,6 +140,7 @@ export const en = {
     message: "Message",
     messagePlaceholder: "What do you want to build?",
     send: "Send message",
+    note: "We reply within one business day.",
     errorText: "Please fill in the highlighted fields.",
     successTitle: "Message received",
     successBody:
@@ -149,30 +201,78 @@ export const th: typeof en = {
     letsTalk: "คุยกันเลย",
   },
   hero: {
-    badge: "Team Stedia — Interactive Studio",
-    headlineBefore: "เราออกแบบและสร้าง",
-    headlineAccent: "อินเทอร์แอคทีฟ",
-    headlineAfter: "ประสบการณ์ที่เร็วและจับต้องได้",
-    sub: "Stedia คือทีมเล็ก ๆ ที่เปลี่ยนไอเดียให้เป็นเว็บโปรดักชันพร้อมใช้งาน — พร้อมเดโม่ที่เฮียกดเล่นได้จริงก่อนที่จะมาคุยกับเราเสียอีก",
-    ctaWork: "ดูผลงานของเรา",
-    ctaContact: "มาคุยกัน",
-    widget: {
-      windowLive: "สด",
-      windowPaused: "หยุดชั่วคราว",
-      counterTitle: "การโต้ตอบแบบเรียลไทม์",
-      counterCta: "กดฉันสิ +",
-      counterHint: (n: number) =>
-        n >= 20 ? "เต็มแล้ว — ไม่มีลิมิตแบบเราแหละ" : "ลองกดดู หน้านี้มันโต้ตอบได้จริง",
-      feedTitle: "ฟีดเซสชัน",
-      feedSub: "สตรีมคลิกสด ๆ",
-      footerHint: "ยังอยู่? แน่นอนว่าเดโม่ของเราเป็นแบบนี้เสมอ",
-    },
+    badge: "Stedia — สตูดิโอเว็บที่ส่งงานให้ลองกดก่อน",
+    headlineBefore: "เราสร้างเว็บโปรดักต์",
+    headlineAccent: "ที่ลองกดได้",
+    headlineAfter: "ก่อนตัดสินใจจ้าง",
+    sub: "Stedia คือทีมรุ่นพี่ขนาดเล็ก ออกแบบและสร้างเว็บไซต์กับแดชบอร์ดระดับ production ทุกโปรเจกต์ด้านล่างมีเดโม่สด — กดใช้งานของจริงก่อน แล้วค่อยตัดสินใจ",
+    ctaWork: "ดูผลงานเด่น",
+    ctaContact: "เริ่มโปรเจกต์",
+    stats: [
+      { value: "12", label: "เดโม่ใช้งานได้บนเว็บนี้" },
+      { value: "4", label: "งานระดับโปรดักต์เต็มรูปแบบ" },
+      { value: "100%", label: "กดได้จริง ไม่มี mockup" },
+    ],
+    visualBadge: "เดโม่สด — กดสำรวจได้",
+    visualCaption: "Admin dashboard · หนึ่งใน concept build ของเรา",
   },
   showcase: {
     eyebrow: "ผลงานคัดสรร",
     title: "ผลงานที่เราสร้าง อยู่บนหน้านี้แบบเล่นได้จริง",
     subtitle: "ทุก case study มาพร้อมเดโม่ที่กดเล่นได้ทันที — ไม่ต้องดาวน์โหลด ไม่ต้องรอ",
     viewCase: "ดู case study",
+  },
+  stack: {
+    label: "สแต็กยุคใหม่ พร้อม production ตั้งแต่วันแรก",
+  },
+  selectedWork: {
+    eyebrow: "ผลงานเด่น",
+    title: "งานจริงที่รันสดอยู่",
+    subtitle:
+      "4 concept build ที่โชว์วิธีคิดของเรา — เปิดชิ้นไหนก็กดเล่นได้ สนามเด็กเล่นทั้งหมดอยู่ในหน้าเดโม่",
+    viewAll: "ดูผลงานและเดโม่ทั้งหมด",
+  },
+  process: {
+    eyebrow: "วิธีทำงานของเรา",
+    title: "จากสายแรกถึงวันปล่อยงานใน 4 ขั้น",
+    subtitle: "ไม่มีกล่องดำ เฮียเห็นของที่ใช้งานได้ตั้งแต่เนิ่น ๆ และเห็นบ่อย",
+    steps: [
+      {
+        title: "คุยให้ชัด",
+        desc: "โทรสั้น ๆ เพื่อจับเป้าหมาย ผู้ใช้ และขอบเขต เฮียได้ใบเสนอราคาชัดเจน ไม่ใช่มิเตอร์เปิด",
+      },
+      {
+        title: "ทำเดโม่ก่อน",
+        desc: "เดโม่กดได้ของ flow หลักภายในไม่กี่วัน เฮียติของจริง ไม่ใช่คำอธิบาย",
+      },
+      {
+        title: "สร้างจริง",
+        desc: "ส่งงานให้กดดูทุกสัปดาห์บน staging link ฟีดแบ็กเข้ารอบถัดไปทันที",
+      },
+      {
+        title: "ปล่อยงาน + ดูแล",
+        desc: "Deploy, analytics และเอกสารส่งมอบ — แล้วเราอยู่ต่อช่วยแก้และต่อยอด",
+      },
+    ],
+  },
+  principles: {
+    eyebrow: "ทำไมต้อง Stedia",
+    title: "ไม่มีสไลด์ขายฝัน",
+    subtitle: "3 กฎที่อยู่เบื้องหลังทุกงานที่เราส่ง",
+    items: [
+      {
+        title: "เดโม่ต้องมาก่อน",
+        desc: "ถ้ากดไม่ได้ถือว่าไม่นับ ทุกข้อเสนอมีของที่รันได้ติดมาด้วย",
+      },
+      {
+        title: "รุ่นพี่ลงมือเอง",
+        desc: "คนที่คุยกับเฮียคือคนที่สร้างงาน ไม่มีส่งต่อ ไม่มีเด็กฝึกงานมาลองของด้วยงบเฮีย",
+      },
+      {
+        title: "เทคโนโลยีน่าเบื่อ ผลลัพธ์น่าตื่นเต้น",
+        desc: "Next.js, NestJS และ TypeORM — ของที่พิสูจน์แล้ว เว็บเฮียเลยเร็ว ปลอดภัย ดูแลง่าย",
+      },
+    ],
   },
   about: {
     eyebrow: "เกี่ยวกับ Stedia",
@@ -182,6 +282,7 @@ export const th: typeof en = {
     cardTitle: "วิศวกรหัวโปรดักต์",
     cardBody:
       "เรายืนอยู่ระหว่างดีไซน์กับวิศวกรรม — ให้ความสำคัญกับประสิทธิภาพ โค้ดที่สะอาด และอินเทอร์แอคชันเล็ก ๆ ที่ทำให้ซอฟต์แวร์มีชีวิตชีวา",
+    imageAlt: "ทีม Stedia กำลังร่วมมือกันรอบโต๊ะทำงาน",
     stats: [
       { value: "2+", label: "Case study ที่เล่นได้จริง" },
       { value: "100%", label: "เดโม่แบบอินเทอร์แอคทีฟ" },
@@ -195,19 +296,23 @@ export const th: typeof en = {
     items: [
       {
         title: "พัฒนาเว็บ",
-        description: "แอป Next.js ที่เร็ว ใช้งานง่าย ด้วยโค้ดที่ type-safe และดูแลรักษาง่าย",
+        description:
+          "เว็บขายของและเว็บแอปที่ลูกค้าใช้ได้ตั้งแต่วันแรก — เร็ว เข้าถึงง่าย ต่อยอดสะดวก",
       },
       {
         title: "วิศวกรรม UI",
-        description: "Design system, component library และ motion ที่ทำให้อินเทอร์เฟซดูตั้งใจจริง",
+        description:
+          "Design system และ component library ที่ทำให้ทุกจอคงเส้นคงวาแม้โปรดักต์จะโต",
       },
       {
         title: "Prototype แบบอินเทอร์แอคทีฟ",
-        description: "เดโม่ที่คลิกได้มาตรฐาน production เพื่อพิสูจน์ไอเดียก่อนจะแตะ backend แม้แต่บรรทัดเดียว",
+        description:
+          "ชิ้นส่วนโปรดักต์ที่กดได้ภายในไม่กี่วัน ให้ผู้บริหารอนุมัติของจริง — ไม่ใช่สไลด์",
       },
       {
         title: "ปล่อยโปรดักต์",
-        description: "ตั้งแต่ตั้ง repo ไปจนถึง CI/CD, monitoring และ analytics — พาไปถึงฝั่งด้วยกัน",
+        description:
+          "ตั้งแต่ตั้ง repo ไปจนถึง CI/CD, monitoring และ analytics — ส่งมอบพร้อมเอกสาร ไม่ใช่ปริศนา",
       },
     ],
   },
@@ -223,6 +328,7 @@ export const th: typeof en = {
     message: "ข้อความ",
     messagePlaceholder: "อยากสร้างอะไรกัน?",
     send: "ส่งข้อความ",
+    note: "เราตอบกลับภายใน 1 วันทำการ",
     errorText: "กรุณากรอกช่องที่ถูกไฮไลต์ให้ครบครับ",
     successTitle: "ได้รับข้อความแล้ว",
     successBody:

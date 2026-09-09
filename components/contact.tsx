@@ -112,6 +112,7 @@ export function Contact() {
               <Button type="submit" size="lg" className="h-10 w-full px-6 sm:w-auto">
                 {contact.send}
               </Button>
+              <p className="text-xs text-muted-foreground">{contact.note}</p>
             </form>
           )}
         </SectionAnimate>

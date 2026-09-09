@@ -2,24 +2,16 @@
 
 import { useMemo, useState } from "react"
 import {
-  Backpack,
-  BatteryCharging,
-  Footprints,
-  Headphones,
   Minus,
   Plus,
   Search,
-  Shirt,
   ShoppingCart,
   Trash2,
-  Watch,
   X,
 } from "lucide-react"
 import { useLang } from "@/components/lang-provider"
 import { demoText } from "@/components/demo/demo-text"
 import { cn } from "@/lib/utils"
-
-const productIcons = [Shirt, Footprints, Headphones, Watch, Backpack, BatteryCharging]
 
 export function ShopPage() {
   const { lang } = useLang()
@@ -149,16 +141,19 @@ export function ShopPage() {
         </div>
 
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {items.map((product, i) => {
-            const Icon = productIcons[i % productIcons.length]
+          {items.map((product) => {
             return (
               <div
                 key={product.name}
                 className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card transition-all duration-300 hover:border-primary/40 hover:shadow-md"
               >
-                <div className="flex aspect-[16/10] items-center justify-center bg-gradient-to-br from-primary/20 via-secondary to-secondary/50">
-                  <Icon className="size-12 text-muted-foreground transition-transform duration-300 group-hover:scale-110" />
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  loading="lazy"
+                  className="aspect-[16/10] w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
                 <div className="flex flex-1 flex-col gap-1 p-4">
                   <div className="flex items-start justify-between gap-2">
                     <h3 className="text-sm font-semibold leading-snug">{product.name}</h3>

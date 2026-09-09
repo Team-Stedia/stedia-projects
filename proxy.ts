@@ -28,5 +28,6 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!_next|favicon.ico).*)"],
+  // skip Next internals, favicon, and any static asset (paths containing a dot)
+  matcher: ["/((?!_next|favicon.ico|.*\\..*).*)"],
 }

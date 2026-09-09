@@ -21,6 +21,13 @@ export function About() {
         </SectionAnimate>
         <SectionAnimate delay={0.1}>
           <div className="flex flex-col gap-6">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/sections/about.jpg"
+              alt={about.imageAlt}
+              loading="lazy"
+              className="aspect-[16/10] w-full rounded-2xl border border-border object-cover"
+            />
             <div className="flex items-start gap-4 rounded-2xl border border-border bg-card p-6">
               <div className="mt-1 shrink-0">{logoMark}</div>
               <div>

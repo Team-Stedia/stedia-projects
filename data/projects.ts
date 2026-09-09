@@ -22,7 +22,7 @@ export const projects: Project[] = [
       en: ["Interactive Demo", "UI", "React"],
       th: ["เดโม่แบบเล่นได้", "UI", "React"],
     },
-    thumbnail: "gradient:calc",
+    thumbnail: "/images/projects/calculator.jpg",
     title: { en: "Mini Calculator", th: "เครื่องคิดเลขจิ๋ว" },
     description: {
       en: "A tiny calculator that runs fully in the browser. Real layout and keystroke handling — a working slice of a product.",
@@ -39,7 +39,7 @@ export const projects: Project[] = [
       en: ["Interactive Demo", "State", "React"],
       th: ["เดโม่แบบเล่นได้", "State", "React"],
     },
-    thumbnail: "gradient:todo",
+    thumbnail: "/images/projects/todo.jpg",
     title: { en: "Interactive Todo List", th: "รายการสิ่งที่ต้องทำ" },
     description: {
       en: "A live todo list demonstrating state management and smooth UI updates — the same patterns we ship into production dashboards.",
@@ -56,7 +56,7 @@ export const projects: Project[] = [
       en: ["Timer", "Focus", "Productivity"],
       th: ["ตัวจับเวลา", "โฟกัส", "ประสิทธิภาพ"],
     },
-    thumbnail: "gradient:pomodoro",
+    thumbnail: "/images/projects/pomodoro.jpg",
     title: { en: "Pomodoro Timer", th: "ตัวจับเวลาพอมโมโดโร่" },
     description: {
       en: "Focus and rest in cycles. Start, pause and reset with a live countdown that respects your session.",
@@ -73,7 +73,7 @@ export const projects: Project[] = [
       en: ["Stopwatch", "Lap", "Timer"],
       th: ["นาฬิกาจับเวลา", "แลป", "Timer"],
     },
-    thumbnail: "gradient:stopwatch",
+    thumbnail: "/images/projects/stopwatch.jpg",
     title: { en: "Stopwatch", th: "นาฬิกาจับเวลา" },
     description: {
       en: "A precise stopwatch with lap recording, built to show off clean state transitions and fast UI updates.",
@@ -90,7 +90,7 @@ export const projects: Project[] = [
       en: ["Game", "Typing", "Speed"],
       th: ["เกม", "พิมพ์ดีด", "ความเร็ว"],
     },
-    thumbnail: "gradient:typing",
+    thumbnail: "/images/projects/typing.jpg",
     title: { en: "Typing Speed Test", th: "ทดสอบความเร็วพิมพ์" },
     description: {
       en: "Race through a phrase while we measure your WPM and accuracy in real time. A favourite for fun, instant engagement.",
@@ -107,7 +107,7 @@ export const projects: Project[] = [
       en: ["Game", "Memory", "Cards"],
       th: ["เกม", "ความจำ", "การ์ด"],
     },
-    thumbnail: "gradient:memory",
+    thumbnail: "/images/projects/memory.jpg",
     title: { en: "Memory Flip", th: "เกมพลิกการ์ดความจำ" },
     description: {
       en: "Flip cards to find matching pairs. A 4×4 board that tests your memory and shows off springy motion.",
@@ -124,7 +124,7 @@ export const projects: Project[] = [
       en: ["Game", "Slot", "Luck"],
       th: ["เกม", "สล็อต", "ดวง"],
     },
-    thumbnail: "gradient:slot",
+    thumbnail: "/images/projects/slot.jpg",
     title: { en: "Slot Machine", th: "เครื่องสล็อต" },
     description: {
       en: "A playful three-reel slot with random spins — another proof that interfaces can be genuinely fun to touch.",
@@ -141,7 +141,7 @@ export const projects: Project[] = [
       en: ["UI", "Color", "Slider"],
       th: ["UI", "สี", "Slider"],
     },
-    thumbnail: "gradient:color",
+    thumbnail: "/images/projects/color.jpg",
     title: { en: "RGB Color Mixer", th: "มิกเซอร์สี RGB" },
     description: {
       en: "Drag the sliders and watch the colour change instantly — a crisp example of reactive UI and live preview.",
@@ -158,7 +158,7 @@ export const projects: Project[] = [
       en: ["Full Page", "Landing", "Marketing"],
       th: ["เต็มหน้า", "แลนดิ้ง", "การตลาด"],
     },
-    thumbnail: "gradient:landing",
+    thumbnail: "/images/projects/landing.jpg",
     title: { en: "SaaS Landing Page", th: "หน้าเว็บแลนดิ้ง SaaS" },
     description: {
       en: "A complete product homepage — sticky nav, hero, stats, feature grid, pricing with billing toggle, FAQ accordion and footer. Every part is clickable.",
@@ -175,7 +175,7 @@ export const projects: Project[] = [
       en: ["Full Page", "E-commerce", "Cart"],
       th: ["เต็มหน้า", "ร้านค้า", "ตะกร้า"],
     },
-    thumbnail: "gradient:shop",
+    thumbnail: "/images/projects/shop.jpg",
     title: { en: "E-commerce Shop", th: "หน้าร้านค้าออนไลน์" },
     description: {
       en: "A storefront with live search, category filters, a working cart drawer with quantities and totals, and a mock checkout flow.",
@@ -192,7 +192,7 @@ export const projects: Project[] = [
       en: ["Full Page", "Dashboard", "Profile"],
       th: ["เต็มหน้า", "แดชบอร์ด", "โปรไฟล์"],
     },
-    thumbnail: "gradient:userdash",
+    thumbnail: "/images/projects/user-dashboard.jpg",
     title: { en: "User Dashboard", th: "แดชบอร์ดผู้ใช้" },
     description: {
       en: "A personal dashboard with sidebar navigation, live stat cards, revenue chart, recent activity, messages inbox and settings toggles.",
@@ -209,7 +209,7 @@ export const projects: Project[] = [
       en: ["Full Page", "Admin", "Table"],
       th: ["เต็มหน้า", "Admin", "ตาราง"],
     },
-    thumbnail: "gradient:admindash",
+    thumbnail: "/images/projects/admin-dashboard.jpg",
     title: { en: "Admin Dashboard", th: "แดชบอร์ดผู้ดูแลระบบ" },
     description: {
       en: "An admin panel with KPI cards, revenue chart, a member table you can search and filter, block/unblock actions, and an orders overview.",

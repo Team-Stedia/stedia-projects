@@ -59,6 +59,7 @@ const text = {
       heroPlaceholder: "Enter your work email",
       heroCta: "Get started",
       heroNote: "Free 14-day trial · No credit card required",
+      heroImageAlt: "Nebula team collaborating on a project",
       heroStats: [
         { value: "4,200+", label: "Projects shipped" },
         { value: "1,900+", label: "Active teams" },
@@ -134,12 +135,12 @@ const text = {
       orderPlaced: "Order placed!",
       freeShipping: "Free shipping over $100",
       products: [
-        { name: "Merino Crewneck", category: "Apparel", price: 68 },
-        { name: "Aero Runner Sneakers", category: "Apparel", price: 92 },
-        { name: "Pulse Wireless Headphones", category: "Electronics", price: 149 },
-        { name: "Vega Smart Watch", category: "Electronics", price: 219 },
-        { name: "Trail 22L Backpack", category: "Accessories", price: 59 },
-        { name: "Orbit Power Bank", category: "Accessories", price: 39 },
+        { name: "Essential White Tee", category: "Apparel", price: 68, image: "/images/shop/crewneck.jpg" },
+        { name: "Aero Runner Sneakers", category: "Apparel", price: 92, image: "/images/shop/sneakers.jpg" },
+        { name: "Pulse Wireless Headphones", category: "Electronics", price: 149, image: "/images/shop/headphones.jpg" },
+        { name: "Vega Smart Watch", category: "Electronics", price: 219, image: "/images/shop/watch.jpg" },
+        { name: "Trail 22L Backpack", category: "Accessories", price: 59, image: "/images/shop/backpack.jpg" },
+        { name: "Orbit Power Bank", category: "Accessories", price: 39, image: "/images/shop/powerbank.jpg" },
       ],
     },
     userDashboardPage: {
@@ -300,6 +301,7 @@ const text = {
       heroPlaceholder: "กรอกอีเมลที่ทำงาน",
       heroCta: "เริ่มต้นใช้งาน",
       heroNote: "ทดลองใช้ฟรี 14 วัน · ไม่ต้องใช้บัตรเครดิต",
+      heroImageAlt: "ทีม Nebula กำลังร่วมมือกันในโปรเจกต์",
       heroStats: [
         { value: "4,200+", label: "โปรเจกต์ที่ส่งมอบ" },
         { value: "1,900+", label: "ทีมที่ใช้งาน" },
@@ -375,12 +377,12 @@ const text = {
       orderPlaced: "สั่งซื้อสำเร็จ!",
       freeShipping: "ส่งฟรีเมื่อซื้อครบ ฿3,500",
       products: [
-        { name: "เสื้อเมอรีโนครอป", category: "เสื้อผ้า", price: 68 },
-        { name: "รองเท้า Aero Runner", category: "เสื้อผ้า", price: 92 },
-        { name: "หูฟังไร้สาย Pulse", category: "อิเล็กทรอนิกส์", price: 149 },
-        { name: "สมาร์ทวอทช์ Vega", category: "อิเล็กทรอนิกส์", price: 219 },
-        { name: "กระเป๋า Trail 22L", category: "เครื่องประดับ", price: 59 },
-        { name: "พาวเวอร์แบงก์ Orbit", category: "เครื่องประดับ", price: 39 },
+        { name: "เสื้อยืดขาว Essential", category: "เสื้อผ้า", price: 68, image: "/images/shop/crewneck.jpg" },
+        { name: "รองเท้า Aero Runner", category: "เสื้อผ้า", price: 92, image: "/images/shop/sneakers.jpg" },
+        { name: "หูฟังไร้สาย Pulse", category: "อิเล็กทรอนิกส์", price: 149, image: "/images/shop/headphones.jpg" },
+        { name: "สมาร์ทวอทช์ Vega", category: "อิเล็กทรอนิกส์", price: 219, image: "/images/shop/watch.jpg" },
+        { name: "กระเป๋า Trail 22L", category: "เครื่องประดับ", price: 59, image: "/images/shop/backpack.jpg" },
+        { name: "พาวเวอร์แบงก์ Orbit", category: "เครื่องประดับ", price: 39, image: "/images/shop/powerbank.jpg" },
       ],
     },
     userDashboardPage: {
