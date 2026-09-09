@@ -9,6 +9,10 @@ import { TypingSpeed } from "./typing-speed"
 import { MemoryFlip } from "./memory-flip"
 import { SlotMachine } from "./slot-machine"
 import { ColorMixer } from "./color-mixer"
+import { LandingPage } from "./pages/landing"
+import { ShopPage } from "./pages/shop"
+import { UserDashboardPage } from "./pages/user-dashboard"
+import { AdminDashboardPage } from "./pages/admin-dashboard"
 import { Notice } from "./notice"
 
 export const demoComponents: Record<string, ComponentType> = {
@@ -20,6 +24,10 @@ export const demoComponents: Record<string, ComponentType> = {
   "memory-flip": MemoryFlip,
   "slot-machine": SlotMachine,
   "color-mixer": ColorMixer,
+  "page-landing": LandingPage,
+  "page-shop": ShopPage,
+  "page-user-dashboard": UserDashboardPage,
+  "page-admin-dashboard": AdminDashboardPage,
 }
 
 export type DemoComponentName = keyof typeof demoComponents

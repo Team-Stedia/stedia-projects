@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { cookies } from "next/headers";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, IBM_Plex_Sans_Thai, Inter } from "next/font/google";
 import "../globals.css";
 import { getDictionary, locales } from "@/lib/i18n/dictionaries";
 import type { Locale } from "@/lib/i18n/dictionaries";
@@ -8,9 +8,15 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { LangProvider } from "@/components/lang-provider";
 import { FloatingFacebook } from "@/components/floating-facebook";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+});
+
+const ibmPlexSansThai = IBM_Plex_Sans_Thai({
+  variable: "--font-ibm-plex-thai",
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["thai", "latin"],
 });
 
 const geistMono = Geist_Mono({
@@ -46,7 +52,7 @@ export default async function LangLayout({ children, params }: LayoutProps<"/[la
     <html
       lang={lang}
       suppressHydrationWarning
-      className={[geistSans.variable, geistMono.variable, initialThemeClass].filter(Boolean).join(" ") + " h-full antialiased"}
+      className={[inter.variable, ibmPlexSansThai.variable, geistMono.variable, initialThemeClass].filter(Boolean).join(" ") + " h-full antialiased"}
     >
       <body className="min-h-full">
         <ThemeProvider>

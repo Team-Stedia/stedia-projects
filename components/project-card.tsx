@@ -7,9 +7,13 @@ import {
   Calculator,
   Clock,
   Dices,
+  Home,
   Keyboard,
+  LayoutDashboard,
   ListChecks,
   Palette,
+  ShieldCheck,
+  ShoppingBag,
   Timer,
 } from "lucide-react"
 import type { Project } from "@/data/projects"
@@ -25,6 +29,10 @@ const gradientTokens = {
   memory: { className: "from-fuchsia-500/80 to-purple-700", Icon: Blocks },
   slot: { className: "from-red-500/80 to-rose-700", Icon: Dices },
   color: { className: "from-blue-500/80 to-indigo-700", Icon: Palette },
+  landing: { className: "from-sky-500/80 to-indigo-700", Icon: Home },
+  shop: { className: "from-pink-500/80 to-rose-700", Icon: ShoppingBag },
+  userdash: { className: "from-teal-500/80 to-cyan-700", Icon: LayoutDashboard },
+  admindash: { className: "from-indigo-500/80 to-blue-700", Icon: ShieldCheck },
 } as const
 
 export function ProjectCard({ project }: { project: Project }) {

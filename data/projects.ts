@@ -151,4 +151,72 @@ export const projects: Project[] = [
     demoComponent: "color-mixer",
     demoUrl: "/demo/color-mixer",
   },
+  {
+    slug: "page-landing",
+    category: "ui",
+    tags: {
+      en: ["Full Page", "Landing", "Marketing"],
+      th: ["เต็มหน้า", "แลนดิ้ง", "การตลาด"],
+    },
+    thumbnail: "gradient:landing",
+    title: { en: "SaaS Landing Page", th: "หน้าเว็บแลนดิ้ง SaaS" },
+    description: {
+      en: "A complete product homepage — sticky nav, hero, stats, feature grid, pricing with billing toggle, FAQ accordion and footer. Every part is clickable.",
+      th: "หน้าแรกของโปรดักต์เต็มรูปแบบ — nav ติดหน้าจอ, hero, สถิติ, กริดฟีเจอร์, ราคาพร้อมสลับรอบบิล, FAQ และ footer ทุกส่วนกดเล่นได้จริง",
+    },
+    demoType: "component",
+    demoComponent: "page-landing",
+    demoUrl: "/demo/page-landing",
+  },
+  {
+    slug: "page-shop",
+    category: "ui",
+    tags: {
+      en: ["Full Page", "E-commerce", "Cart"],
+      th: ["เต็มหน้า", "ร้านค้า", "ตะกร้า"],
+    },
+    thumbnail: "gradient:shop",
+    title: { en: "E-commerce Shop", th: "หน้าร้านค้าออนไลน์" },
+    description: {
+      en: "A storefront with live search, category filters, a working cart drawer with quantities and totals, and a mock checkout flow.",
+      th: "หน้าร้านค้าพร้อมค้นหาแบบสด ๆ, กรองหมวดสินค้า, ตะกร้าที่ใช้งานได้จริงทั้งจำนวนและยอดรวม และขั้นตอนสั่งซื้อจำลอง",
+    },
+    demoType: "component",
+    demoComponent: "page-shop",
+    demoUrl: "/demo/page-shop",
+  },
+  {
+    slug: "page-user-dashboard",
+    category: "ui",
+    tags: {
+      en: ["Full Page", "Dashboard", "Profile"],
+      th: ["เต็มหน้า", "แดชบอร์ด", "โปรไฟล์"],
+    },
+    thumbnail: "gradient:userdash",
+    title: { en: "User Dashboard", th: "แดชบอร์ดผู้ใช้" },
+    description: {
+      en: "A personal dashboard with sidebar navigation, live stat cards, revenue chart, recent activity, messages inbox and settings toggles.",
+      th: "แดชบอร์ดส่วนตัวพร้อมเมนูด้านข้าง, การ์ดสถิติสด, กราฟรายได้, กิจกรรมล่าสุด, กล่องข้อความ และตั้งค่าแบบสลับเปิดปิด",
+    },
+    demoType: "component",
+    demoComponent: "page-user-dashboard",
+    demoUrl: "/demo/page-user-dashboard",
+  },
+  {
+    slug: "page-admin-dashboard",
+    category: "ui",
+    tags: {
+      en: ["Full Page", "Admin", "Table"],
+      th: ["เต็มหน้า", "Admin", "ตาราง"],
+    },
+    thumbnail: "gradient:admindash",
+    title: { en: "Admin Dashboard", th: "แดชบอร์ดผู้ดูแลระบบ" },
+    description: {
+      en: "An admin panel with KPI cards, revenue chart, a member table you can search and filter, block/unblock actions, and an orders overview.",
+      th: "แผงผู้ดูแลระบบพร้อมการ์ด KPI, กราฟรายได้, ตารางสมาชิกที่ค้นหาและกรองได้, ปุ่มบล็อก/เลิกบล็อก และภาพรวมออเดอร์",
+    },
+    demoType: "component",
+    demoComponent: "page-admin-dashboard",
+    demoUrl: "/demo/page-admin-dashboard",
+  },
 ]
