@@ -4,23 +4,28 @@ import { useState } from "react"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
+import { useLang } from "@/components/lang-provider"
+import { LanguageToggle } from "@/components/language-toggle"
+import { ThemeToggle } from "@/components/theme-toggle"
 import { logoMark } from "@/components/logo"
 
-const navLinks = [
-  { label: "Work", href: "/work" },
-  { label: "About", href: "/#about" },
-  { label: "Services", href: "/#services" },
-  { label: "Contact", href: "/#contact" },
-]
-
 export function SiteHeader() {
+  const { dict, lang } = useLang()
   const [open, setOpen] = useState(false)
+
+  const navLinks = [
+    { label: dict.header.work, href: `/${lang}/work` },
+    { label: dict.header.demos, href: `/${lang}/demos` },
+    { label: dict.header.about, href: `/${lang}/#about` },
+    { label: dict.header.services, href: `/${lang}/#services` },
+    { label: dict.header.contact, href: `/${lang}/#contact` },
+  ]
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6 md:px-8">
         <Link
-          href="/"
+          href={`/${lang}`}
           onClick={() => setOpen(false)}
           className="group flex items-center gap-2"
           aria-label="Stedia home"
@@ -29,7 +34,7 @@ export function SiteHeader() {
           <span className="text-lg font-semibold tracking-tight">Stedia</span>
         </Link>
 
-        <nav className="hidden items-center gap-7 md:flex" aria-label="Main navigation">
+        <nav className="hidden items-center gap-6 md:flex" aria-label="Main navigation">
           {navLinks.map((link) => (
             <Link
               key={link.label}
@@ -39,8 +44,12 @@ export function SiteHeader() {
               {link.label}
             </Link>
           ))}
+          <div className="flex items-center gap-1 border-l border-border/60 ps-4">
+            <LanguageToggle />
+            <ThemeToggle />
+          </div>
           <Button asChild>
-            <Link href="/#contact">Let&apos;s Talk</Link>
+            <Link href={`/${lang}/#contact`}>{dict.header.letsTalk}</Link>
           </Button>
         </nav>
 
@@ -82,9 +91,13 @@ export function SiteHeader() {
                 {link.label}
               </Link>
             ))}
+            <div className="mt-2 flex items-center gap-1 px-3">
+              <LanguageToggle />
+              <ThemeToggle />
+            </div>
             <Button asChild className="mt-2">
-              <Link href="/#contact" onClick={() => setOpen(false)}>
-                Let&apos;s Talk
+              <Link href={`/${lang}/#contact`} onClick={() => setOpen(false)}>
+                {dict.header.letsTalk}
               </Link>
             </Button>
           </nav>

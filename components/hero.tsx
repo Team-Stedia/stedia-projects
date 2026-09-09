@@ -4,9 +4,12 @@ import { useState } from "react"
 import Link from "next/link"
 import { motion } from "motion/react"
 import { Button } from "@/components/ui/button"
+import { useLang } from "@/components/lang-provider"
 import { cn } from "@/lib/utils"
 
 export function Hero() {
+  const { dict, lang } = useLang()
+  const hero = dict.hero
   const [clicked, setClicked] = useState(0)
   const [live, setLive] = useState(true)
 
@@ -23,25 +26,24 @@ export function Hero() {
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-75" />
               <span className="relative inline-flex size-2 rounded-full bg-primary" />
             </span>
-            Team Stedia — Interactive Studio
+            {hero.badge}
           </p>
           <h1 className="text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            We design &amp; build fast,{" "}
+            {hero.headlineBefore}{" "}
             <span className="bg-gradient-to-r from-primary to-[oklch(0.55_0.16_255)] bg-clip-text text-transparent">
-              interactive
+              {hero.headlineAccent}
             </span>{" "}
-            experiences.
+            {hero.headlineAfter}
           </h1>
           <p className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Stedia is a small team that turns ideas into production-ready web products —
-            with a demo you can actually click before you even talk to us.
+            {hero.sub}
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Button asChild size="lg" className="h-10 px-6">
-              <Link href="/work">See our work</Link>
+              <Link href={`/${lang}/work`}>{hero.ctaWork}</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="h-10 px-6">
-              <Link href="/#contact">Let&apos;s Talk</Link>
+              <Link href={`/${lang}/#contact`}>{hero.ctaContact}</Link>
             </Button>
           </div>
         </motion.div>
@@ -69,14 +71,14 @@ export function Hero() {
                 )}
               >
                 <span className="size-1.5 rounded-full bg-current" />
-                {live ? "Live" : "Paused"}
+                {live ? hero.widget.windowLive : hero.widget.windowPaused}
               </span>
             </div>
 
             <div className="flex flex-col gap-5">
               <div className="rounded-xl border border-border bg-background p-5">
                 <p className="text-xs font-medium text-muted-foreground">
-                  Real-time interactions
+                  {hero.widget.counterTitle}
                 </p>
                 <div className="mt-2 flex items-end justify-between gap-4">
                   <span className="font-mono text-5xl font-semibold tabular-nums tracking-tight">
@@ -87,7 +89,7 @@ export function Hero() {
                     onClick={() => setClicked((value) => value + 1)}
                     className="h-10 rounded-lg bg-primary px-4 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105 active:scale-95"
                   >
-                    Click me +
+                    {hero.widget.counterCta}
                   </button>
                 </div>
                 <div className="mt-4 h-1.5 overflow-hidden rounded-full bg-secondary">
@@ -98,14 +100,14 @@ export function Hero() {
                   />
                 </div>
                 <p className="mt-2 text-xs text-muted-foreground">
-                  {clicked >= 20 ? "Maxed out — no limits, like us." : "Try it, this page interacts."}
+                  {hero.widget.counterHint(clicked)}
                 </p>
               </div>
 
               <div className="flex items-center justify-between rounded-xl border border-border bg-background p-5">
                 <div>
-                  <p className="text-sm font-medium">Session feed</p>
-                  <p className="text-xs text-muted-foreground">Live stream of clicks</p>
+                  <p className="text-sm font-medium">{hero.widget.feedTitle}</p>
+                  <p className="text-xs text-muted-foreground">{hero.widget.feedSub}</p>
                 </div>
                 <button
                   type="button"
@@ -126,7 +128,7 @@ export function Hero() {
               </div>
 
               <p className="text-center text-xs text-muted-foreground">
-                Still here? Precisely what our demos feel like.
+                {hero.widget.footerHint}
               </p>
             </div>
           </div>

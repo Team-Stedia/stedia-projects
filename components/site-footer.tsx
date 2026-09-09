@@ -1,13 +1,22 @@
+"use client"
+
 import { FacebookIcon, InstagramIcon, GithubIcon } from "@/components/icons"
+import { useLang } from "@/components/lang-provider"
 import { logoMark } from "@/components/logo"
 
-const socialLinks = [
-  { label: "Facebook", href: "https://www.facebook.com/people/Team-Stedia/61573570074191/", Icon: FacebookIcon },
-  { label: "Instagram", href: "#", Icon: InstagramIcon },
-  { label: "GitHub", href: "#", Icon: GithubIcon },
-]
-
 export function SiteFooter() {
+  const { dict } = useLang()
+
+  const socialLinks = [
+    {
+      label: dict.footer.social.facebook,
+      href: "https://www.facebook.com/people/Team-Stedia/61573570074191/",
+      Icon: FacebookIcon,
+    },
+    { label: dict.footer.social.instagram, href: "#", Icon: InstagramIcon },
+    { label: dict.footer.social.github, href: "#", Icon: GithubIcon },
+  ]
+
   return (
     <footer className="border-t border-border/60 bg-muted/30">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-6 py-12 md:flex-row md:items-center md:justify-between md:px-8">
@@ -32,7 +41,7 @@ export function SiteFooter() {
         </nav>
 
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Stedia. All rights reserved.
+          © {new Date().getFullYear()} Stedia. {dict.footer.rights}
         </p>
       </div>
     </footer>
