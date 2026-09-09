@@ -22,7 +22,7 @@ export const projects: Project[] = [
     category: "tool",
     tags: {
       en: ["Interactive Demo", "UI", "React"],
-      th: ["เดโมแบบเล่นได้", "UI", "React"],
+      th: ["Demoแบบเล่นได้", "UI", "React"],
     },
     thumbnail: "/images/projects/calculator.jpg",
     title: { en: "Mini Calculator", th: "เครื่องคิดเลขจิ๋ว" },
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     category: "tool",
     tags: {
       en: ["Interactive Demo", "State", "React"],
-      th: ["เดโมแบบเล่นได้", "State", "React"],
+      th: ["Demoแบบเล่นได้", "State", "React"],
     },
     thumbnail: "/images/projects/todo.jpg",
     title: { en: "Interactive Todo List", th: "รายการสิ่งที่ต้องทำ" },

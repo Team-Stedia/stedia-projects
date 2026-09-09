@@ -12,14 +12,15 @@ export function Principles() {
   const principles = dict.principles
 
   return (
-    <section className="mx-auto w-full max-w-6xl px-6 py-20 md:px-8 md:py-28">
-      <SectionAnimate>
-        <SectionHeading
-          eyebrow={principles.eyebrow}
-          title={principles.title}
-          subtitle={principles.subtitle}
-        />
-      </SectionAnimate>
+    <section className="border-y border-border/60 bg-muted/30">
+      <div className="mx-auto w-full max-w-6xl px-6 py-20 md:px-8 md:py-28">
+        <SectionAnimate>
+          <SectionHeading
+            eyebrow={principles.eyebrow}
+            title={principles.title}
+            subtitle={principles.subtitle}
+          />
+        </SectionAnimate>
       <div className="mt-12 grid gap-6 md:grid-cols-3">
         {principles.items.map((item, index) => {
           const Icon = principleIcons[index] ?? MousePointerClick
@@ -35,6 +36,7 @@ export function Principles() {
             </SectionAnimate>
           )
         })}
+      </div>
       </div>
     </section>
   )

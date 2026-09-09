@@ -138,22 +138,24 @@ export const en = {
     title: "Let's build something you can click",
     subtitle:
       "Tell us about your project and we'll reply within a day. Got a vague idea? Even better — that's our favourite starting point.",
-    name: "Name",
-    namePlaceholder: "Your name",
-    email: "Email",
-    emailPlaceholder: "you@example.com",
-    message: "Message",
-    messagePlaceholder: "What do you want to build?",
-    send: "Send message",
+    facebookTitle: "One click, real human",
+    facebookBody:
+      "No forms, no waiting rooms. Tap below and you're chatting with the people who will actually build your project.",
+    facebookButton: "Chat on Facebook",
+    points: [
+      "Reply within one business day",
+      "Tell us your goal, timeline and budget",
+      "Get a fixed quote — not an open meter",
+    ],
     note: "We reply within one business day.",
-    errorText: "Please fill in the highlighted fields.",
-    successTitle: "Message received",
-    successBody:
-      "Thanks for reaching out — we'll get back to you soon. (This form is UI-only for now, no backend attached yet.)",
-    successAgain: "Send another",
   },
   footer: {
     rights: "All rights reserved.",
+    ctaTitle: "Have a project in mind?",
+    ctaSub: "Skip the form — message us on Facebook and hear back within one business day.",
+    ctaButton: "Chat on Facebook",
+    explore: "Explore",
+    studio: "Studio",
     social: {
       facebook: "Facebook",
       instagram: "Instagram",
@@ -202,7 +204,7 @@ export const th: typeof en = {
     about: "เกี่ยวกับ",
     services: "บริการ",
     contact: "ติดต่อ",
-    demos: "เดโม",
+    demos: "Demo",
     letsTalk: "คุยกันเลย",
   },
   hero: {
@@ -210,21 +212,21 @@ export const th: typeof en = {
     headlineBefore: "เราสร้างเว็บโปรดักต์",
     headlineAccent: "ที่ลองกดได้",
     headlineAfter: "ก่อนตัดสินใจจ้าง",
-    sub: "Stedia คือทีมรุ่นพี่ขนาดเล็ก ออกแบบและสร้างเว็บไซต์กับแดชบอร์ดระดับ production ทุกโปรเจกต์ด้านล่างมีเดโมสด — กดใช้งานของจริงก่อน แล้วค่อยตัดสินใจ",
+    sub: "Stedia คือทีมรุ่นพี่ขนาดเล็ก ออกแบบและสร้างเว็บไซต์กับแดชบอร์ดระดับ production ทุกโปรเจกต์ด้านล่างมี Live Demo — กดใช้งานของจริงก่อน แล้วค่อยตัดสินใจ",
     ctaWork: "ดูผลงานเด่น",
     ctaContact: "เริ่มโปรเจกต์",
     stats: [
-      { value: "12", label: "เดโมใช้งานได้บนเว็บนี้" },
+      { value: "12", label: "Demoใช้งานได้บนเว็บนี้" },
       { value: "4", label: "งานระดับโปรดักต์เต็มรูปแบบ" },
       { value: "100%", label: "กดได้จริง ไม่มี mockup" },
     ],
-    visualBadge: "เดโมสด — กดสำรวจได้",
+    visualBadge: "Live Demo — กดสำรวจได้",
     visualCaption: "Admin dashboard · หนึ่งใน concept build ของเรา",
   },
   showcase: {
     eyebrow: "ผลงานคัดสรร",
     title: "ผลงานที่เราสร้าง อยู่บนหน้านี้แบบเล่นได้จริง",
-    subtitle: "ทุก case study มาพร้อมเดโมที่กดเล่นได้ทันที — ไม่ต้องดาวน์โหลด ไม่ต้องรอ",
+    subtitle: "ทุก case study มาพร้อมDemoที่กดเล่นได้ทันที — ไม่ต้องดาวน์โหลด ไม่ต้องรอ",
     viewCase: "ดู case study",
   },
   stack: {
@@ -239,8 +241,8 @@ export const th: typeof en = {
     eyebrow: "ผลงานเด่น",
     title: "งานจริงที่รันสดอยู่",
     subtitle:
-      "4 concept build ที่โชว์วิธีคิดของเรา — เปิดชิ้นไหนก็กดเล่นได้ ดูทั้งหมดได้ที่หน้าเดโม",
-    viewAll: "ดูผลงานและเดโมทั้งหมด",
+      "4 concept build ที่โชว์วิธีคิดของเรา — เปิดชิ้นไหนก็กดเล่นได้ ดูทั้งหมดได้ที่หน้าDemo",
+    viewAll: "ดูผลงานและDemoทั้งหมด",
   },
   process: {
     eyebrow: "วิธีทำงานของเรา",
@@ -252,8 +254,8 @@ export const th: typeof en = {
         desc: "โทรสั้น ๆ เพื่อจับเป้าหมาย ผู้ใช้ และขอบเขต คุณได้ใบเสนอราคาชัดเจน ไม่ใช่มิเตอร์เปิด",
       },
       {
-        title: "ทำเดโมก่อน",
-        desc: "เดโมกดได้ของ flow หลักภายในไม่กี่วัน คุณติของจริง ไม่ใช่คำอธิบาย",
+        title: "ทำDemoก่อน",
+        desc: "Demoกดได้ของ flow หลักภายในไม่กี่วัน คุณติของจริง ไม่ใช่คำอธิบาย",
       },
       {
         title: "สร้างจริง",
@@ -271,7 +273,7 @@ export const th: typeof en = {
     subtitle: "3 กฎที่อยู่เบื้องหลังทุกงานที่เราส่ง",
     items: [
       {
-        title: "เดโมต้องมาก่อน",
+        title: "Demoต้องมาก่อน",
         desc: "ถ้ากดไม่ได้ถือว่าไม่นับ ทุกข้อเสนอมีของที่รันได้ติดมาด้วย",
       },
       {
@@ -288,14 +290,14 @@ export const th: typeof en = {
     eyebrow: "เกี่ยวกับ Stedia",
     title: "ทีมเล็ก ๆ ที่ชอบลงมือทำจริง",
     subtitle:
-      "Stedia คือสตูดิโอขนาดกะทัดรัดที่เต็มไปด้วยรุ่นพี่ ลองของจริงดีกว่าดูสไลด์เสมอ — เราเลยไม่ส่งแค่หน้าจอดีไซน์ แต่ส่งเดโมที่ใช้งานได้จริง",
+      "Stedia คือสตูดิโอขนาดกะทัดรัดที่เต็มไปด้วยรุ่นพี่ ลองของจริงดีกว่าดูสไลด์เสมอ — เราเลยไม่ส่งแค่หน้าจอดีไซน์ แต่ส่งDemoที่ใช้งานได้จริง",
     cardTitle: "วิศวกรหัวโปรดักต์",
     cardBody:
       "เรายืนอยู่ระหว่างดีไซน์กับวิศวกรรม — ให้ความสำคัญกับประสิทธิภาพ โค้ดที่สะอาด และอินเทอร์แอคชันเล็ก ๆ ที่ทำให้ซอฟต์แวร์มีชีวิตชีวา",
     imageAlt: "ทีม Stedia กำลังร่วมมือกันรอบโต๊ะทำงาน",
     stats: [
       { value: "2+", label: "Case study ที่เล่นได้จริง" },
-      { value: "100%", label: "เดโมแบบอินเทอร์แอคทีฟ" },
+      { value: "100%", label: "Demoแบบอินเทอร์แอคทีฟ" },
       { value: "Zero", label: "เรื่องน้ำท่วมทุ่ง" },
     ],
   },
@@ -315,7 +317,7 @@ export const th: typeof en = {
           "Design system และ component library ที่ทำให้ทุกจอคงเส้นคงวาแม้โปรดักต์จะโต",
       },
       {
-        title: "Prototype แบบอินเทอร์แอคทีฟ",
+        title: "Interactive Prototype",
         description:
           "ชิ้นส่วนโปรดักต์ที่กดได้ภายในไม่กี่วัน ให้ผู้บริหารอนุมัติของจริง — ไม่ใช่สไลด์",
       },
@@ -331,22 +333,24 @@ export const th: typeof en = {
     title: "มาสร้างของที่กดได้จริงด้วยกัน",
     subtitle:
       "เล่าโปรเจกต์ของคุณมา แล้วเราจะตอบกลับภายใน 1 วัน ไอเดียยังมั่ว ๆ เหรอ? ยิ่งดี — นั่นคือจุดเริ่มต้นที่เราถนัดที่สุด",
-    name: "ชื่อ",
-    namePlaceholder: "ชื่อของคุณ",
-    email: "อีเมล",
-    emailPlaceholder: "you@example.com",
-    message: "ข้อความ",
-    messagePlaceholder: "อยากสร้างอะไรกัน?",
-    send: "ส่งข้อความ",
+    facebookTitle: "คลิกเดียว เจอคนจริง",
+    facebookBody:
+      "ไม่มีฟอร์ม ไม่ต้องรอ กดปุ่มด้านล่างแล้วคุยกับคนที่สร้างงานให้คุณโดยตรง",
+    facebookButton: "แชทผ่าน Facebook",
+    points: [
+      "ตอบกลับภายใน 1 วันทำการ",
+      "เล่าเป้าหมาย ไทม์ไลน์ และงบมาได้เลย",
+      "ได้ใบเสนอราคาชัดเจน ไม่ใช่มิเตอร์เปิด",
+    ],
     note: "เราตอบกลับภายใน 1 วันทำการ",
-    errorText: "กรุณากรอกช่องที่ถูกไฮไลต์ให้ครบครับ",
-    successTitle: "ได้รับข้อความแล้ว",
-    successBody:
-      "ขอบคุณที่ติดต่อมา — เราจะตอบกลับเร็ว ๆ นี้ (ฟอร์มนี้ตอนนี้เป็น UI อย่างเดียว ยังไม่ได้ต่อ backend ครับ)",
-    successAgain: "ส่งอีกครั้ง",
   },
   footer: {
     rights: "สงวนลิขสิทธิ์ทั้งหมด",
+    ctaTitle: "มีโปรเจกต์ในใจอยู่ใช่ไหม?",
+    ctaSub: "ข้ามฟอร์มไปได้เลย — ทัก Facebook มาคุยกัน ตอบกลับภายใน 1 วันทำการ",
+    ctaButton: "แชทผ่าน Facebook",
+    explore: "สำรวจ",
+    studio: "สตูดิโอ",
     social: {
       facebook: "Facebook",
       instagram: "Instagram",
@@ -355,31 +359,31 @@ export const th: typeof en = {
   },
   work: {
     eyebrow: "ผลงานทั้งหมด",
-    title: "ทุกโปรเจกต์มีเดโมเล่นได้จริง",
+    title: "ทุกโปรเจกต์มีDemoเล่นได้จริง",
     subtitle: "ไล่ดู case study ของเรา — ทุกชิ้นมีอะไรที่คุณกดได้จริงติดมาด้วย",
     all: "ทั้งหมด",
     empty: "ยังไม่มีโปรเจกต์ในแท็กนี้ครับ",
   },
   caseStudy: {
     back: "กลับไปหน้าผลงาน",
-    liveDemo: "เดโมสด",
-    openFull: "เปิดเดโมเต็มจอ",
+    liveDemo: "Live Demo",
+    openFull: "เปิดDemoเต็มจอ",
   },
   demos: {
-    eyebrow: "เดโม",
-    title: "เดโมอินเทอร์แอคทีฟ กดเล่นได้ตรงนี้เลย",
-    subtitle: "ทุกเดโมด้านล่างรันสดอยู่บนหน้านี้ — เล่นดูได้เลย แล้วค่อยเปิดเต็มจอหรืออ่าน case study",
-    openFull: "เปิดเดโมเต็มจอ",
+    eyebrow: "Demo",
+    title: "Interactive Demo กดเล่นได้ตรงนี้เลย",
+    subtitle: "ทุกDemoด้านล่างรันสดอยู่บนหน้านี้ — เล่นดูได้เลย แล้วค่อยเปิดเต็มจอหรืออ่าน case study",
+    openFull: "เปิดDemoเต็มจอ",
     viewCase: "อ่าน case study",
-    empty: "ยังไม่มีเดโมในหมวดนี้ครับ",
+    empty: "ยังไม่มีDemoในหมวดนี้ครับ",
     categoryTool: "เครื่องมือ",
     categoryGame: "เกม",
     categoryUi: "UI",
-    shown: "เดโม",
+    shown: "Demo",
   },
   demoPage: {
     back: "กลับไป case study",
-    liveBadge: "เดโมสด",
+    liveBadge: "Live Demo",
   },
   notFound: {
     title: "ไม่พบหน้าที่ค้นหา",

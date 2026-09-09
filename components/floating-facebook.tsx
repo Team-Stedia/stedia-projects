@@ -1,6 +1,5 @@
 import { FacebookIcon } from "@/components/icons"
-
-const FACEBOOK_URL = "https://www.facebook.com/people/Team-Stedia/61573570074191/"
+import { FACEBOOK_URL } from "@/lib/social"
 
 export function FloatingFacebook() {
   return (

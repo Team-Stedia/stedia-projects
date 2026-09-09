@@ -10,7 +10,7 @@ export function About() {
   const about = dict.about
 
   return (
-    <section id="about" className="border-y border-border/60 bg-muted/30">
+    <section id="about" className="border-y border-border/60">
       <div className="mx-auto grid w-full max-w-6xl gap-12 px-6 py-20 md:px-8 md:py-28 lg:grid-cols-2 lg:gap-20">
         <SectionAnimate>
           <SectionHeading
